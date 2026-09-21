@@ -36,6 +36,12 @@
 - **Q2（DB schema）**：本地 QM-AI 有 `qmai-full.sql` + `database/` 迁移，可先实测核实。
 - **部署机**：默认 `uantek@nat.ywapi.com`（与 MES-v24 同机，独立命名空间/端口）。
 
+## Git / 网络备注
+- 远程：`origin = https://github.com/charrote/AutoDemoDataGem.git`（分支 `main`）。
+- **本机 GitHub HTTPS 直连超时**，推送/拉取需走 7890 代理：
+  `git -c http.proxy=http://127.0.0.1:7890 -c https.proxy=http://127.0.0.1:7890 push`
+  （SSH 22 被网络重置，暂不可用；若需长期可配 `git config http.proxy`。）
+
 ## 里程碑
 
 - **M1 基础闭环**：0.0 → 1.3（仓库/Registry/注册登录/凭证/系统接入/连接测试）
