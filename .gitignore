@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+
+# Env / secrets (凭证单一来源, 不进库)
+.env
+*.local
+
+# Docker
+mysql_data/
+pgdata/
+
+# IDE
+.idea/
+.vscode/
+*.swp
